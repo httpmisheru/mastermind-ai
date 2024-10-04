@@ -1,0 +1,148 @@
+/* Global Body Styles */
+body {
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;  /* Light color for text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #e0e0e0;  /* Light text color */
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #c0c0c0;  /* Slightly dimmer light color for paragraphs */
+}
+
+.stMarkdown {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e0e0e0;  /* Light text color */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Banner Styles */
+.stImage > img {
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);  /* Subtle shadow for dark mode */
+}
+
+.banner-overlay {
+    position: relative;
+    text-align: center;
+}
+
+.banner-overlay .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);  /* Transparent background */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Bullet Points with Icons */
+.stMarkdown ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #e0e0e0;
+}
+
+.stMarkdown ul li::before {
+    content: "✔️";
+    color: #e56717;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+
+/* Button Styles */
+.stButton > button {
+    color: white;
+    background-color: black;  /* Change background to black */
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);  /* Shadow with black tint */
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.stButton > button:hover {
+    background-color: #e56717;  /* Slightly lighter black on hover */
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);  /* Larger black shadow on hover */
+    cursor: pointer;
+}
+
+.stButton > button:active {
+    background-color: #4b4b4b;  /* Dark gray when active */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+/* Sidebar Styles */
+.css-1d391kg {  /* Sidebar background */
+    background-color: #2A2A40;
+    padding: 30px 20px;
+}
+
+.css-qrbaxs {  /* Sidebar text */
+    font-size: 18px;
+    color: #E0E0E0;  /* Light text for sidebar */
+}
+
+.css-qrbaxs:hover {
+    background-color: #e56717;  /* Highlight sidebar item on hover */
+    font-weight: bold;
+}
+
+/* Input Fields */
+.stTextInput > div > input {
+    border: 1px solid #e56717;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    background-color: #333355;  /* Dark input field */
+    color: #e0e0e0;  /* Light text */
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);  /* Subtle shadow */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Smooth Scroll for the page */
+html {
+    scroll-behavior: smooth;
+}
