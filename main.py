@@ -11,7 +11,7 @@ import re
 from collections import defaultdict
 from gtts import gTTS
 import tempfile
-import notesGenerator, career, history, insight
+import notesGenerator, career, insight
 import pydot
 from streamlit_option_menu import option_menu
 
